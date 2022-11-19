@@ -1,0 +1,2 @@
+mm/oplus_perf_mm/gloom/oplus_bsp_gloom.ko
+drivers/soc/qcom/sync_fence/qcom_sync_file.ko
