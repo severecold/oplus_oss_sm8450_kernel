@@ -38,10 +38,10 @@ if [ -f "${ROOT_DIR}/oplus/config/build.config.msm.wapio.oplus" ]; then
 fi
 
 # disable KMI symbol list and white list test in aging mode
-# if [ -n "${AGING_DEBUG_MASK}" ]; then
-#   echo " Detect aging mode, AGING_DEBUG_MASK is ${AGING_DEBUG_MASK}"
-#   GKI_TRIM_NONLISTED_KMI=0
-#   GKI_KMI_SYMBOL_LIST_STRICT_MODE=0
-# fi
+if [ -n "${AGING_DEBUG_MASK}" ]; then
+  echo " Detect aging mode, AGING_DEBUG_MASK is ${AGING_DEBUG_MASK}"
+  GKI_TRIM_NONLISTED_KMI=0
+  GKI_KMI_SYMBOL_LIST_STRICT_MODE=0
+fi
 
 set +x
